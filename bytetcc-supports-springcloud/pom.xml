@@ -7,10 +7,10 @@
 		<artifactId>bytetcc-parent</artifactId>
 		<version>0.4.0-SNAPSHOT</version>
 	</parent>
-	<artifactId>bytetcc-supports</artifactId>
+	<artifactId>bytetcc-supports-springcloud</artifactId>
 	<packaging>jar</packaging>
 
-	<name>bytetcc-supports</name>
+	<name>bytetcc-supports-springcloud</name>
 	<description>The bytetcc-supports project is the module of ByteTCC for integrating with third-party open source project.</description>
 	<url>http://www.bytesoft.org</url>
 
@@ -26,26 +26,8 @@
 		</dependency>
 		<dependency>
 			<groupId>org.bytesoft</groupId>
-			<artifactId>bytejta-supports</artifactId>
+			<artifactId>bytetcc-supports</artifactId>
 			<version>0.4.0-SNAPSHOT</version>
-			<exclusions>
-				<exclusion>
-					<groupId>org.springframework</groupId>
-					<artifactId>spring-jdbc</artifactId>
-				</exclusion>
-				<exclusion>
-					<groupId>org.springframework</groupId>
-					<artifactId>spring-tx</artifactId>
-				</exclusion>
-				<exclusion>
-					<groupId>org.springframework</groupId>
-					<artifactId>spring-aop</artifactId>
-				</exclusion>
-				<exclusion>
-					<groupId>org.springframework</groupId>
-					<artifactId>spring-context</artifactId>
-				</exclusion>
-			</exclusions>
 		</dependency>
 		<dependency>
 			<groupId>javax.servlet</groupId>
@@ -72,6 +54,28 @@
 			<artifactId>spring-aop</artifactId>
 			<version>4.3.7.RELEASE</version>
 		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+			<version>4.3.7.RELEASE</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-eureka</artifactId>
+			<version>1.3.0.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-ribbon</artifactId>
+			<version>1.3.0.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-feign</artifactId>
+			<version>1.3.0.RELEASE</version>
+		</dependency>
+
 		<dependency>
 			<groupId>aopalliance</groupId>
 			<artifactId>aopalliance</artifactId>
